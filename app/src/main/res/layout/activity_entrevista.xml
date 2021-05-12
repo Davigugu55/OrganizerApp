@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Entrevista">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Organizer.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Organizer.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Pontuação: 0"
+        android:textAlignment="center" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Cruzou os braços" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Bocejou" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Não se vestiu adequadamente" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Demonstrou-se desconfortável durante a entrevista" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Foi prolixo durante as respostas" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Foi monossilábico durante as respostas" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Falou mal do emprego anterior" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Expôs sua vida pessoal em excesso" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Apresentou dificuldade em articular suas respostas" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint1"
+                android:text="Perguntou sobre salário no início da entrevista" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Chegou até 15 minutos atrasado" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Não fez pergunta sobre a vaga ao entrevistador" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Não trouxe currículo impresso" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Não tem conhecimento da língua espanhola" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Estava desinformado sobre a vaga" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint2"
+                android:text="Estava desinformado sobre a empresa" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint3"
+                android:text="Chegou até 30 minutos atrasado" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint3"
+                android:text="Cometeu erro de concordância verbal na entrevista" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint3"
+                android:text="Não tem disponibilidade para viajar" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint3"
+                android:text="Respondeu erroneamente a uma pergunta técnica" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint4"
+                android:text="Chegou mais do que 30 minutos atrasado" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint4"
+                android:text="Usou termo de baixo calão" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint4"
+                android:text="Não tem conhecimento da língua inglesa" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPoint4"
+                android:text="Saiu da entrevista antes do seu término" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
