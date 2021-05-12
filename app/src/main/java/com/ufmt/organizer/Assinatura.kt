@@ -18,6 +18,8 @@ class Assinatura : AppCompatActivity() {
     }
 
     fun assinar(view: View) {
-        //TODO
+        val intent = Intent(this, Entrevista::class.java)
+        startActivity(intent)
+        finish()
     }
 }
